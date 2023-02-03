@@ -1,0 +1,50 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style id="aby-style"></style></head><body>
+<img src="mobil.jfif" width="100%" height="45%">
+<div class="w3-bar w3-blue">
+<button class="w3-bar-item w3-button" onclick="openKota('Biodata')">Biodata</button>
+<button class="w3-bar-item w3-button" onclick="openKota('Garut')">Mobil</button>
+<button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Motor</button>
+	<div class="w3-dropdown-hover">
+			<button class="w3-button">Pilihan</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<button class="w3-bar-item w3-button" onclick="openKota('Garut')">Mobil</button>
+					<button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Motor</button>
+					<button class="w3-bar-item w3-button" onclick="openKota('Biodata')">Biodata</button>
+				</div>
+	</div>
+</div>
+<center>
+<div id="Biodata" class="w3-container kota w3-animate-fading" style="display: block;">
+<h2>Nama: Albian Ahnaf</h2>
+<br>
+<h2>NIM: 10122008</h2>
+<br>
+<h2>Kelas: IF 1</h2>
+</div>
+<div id="Garut" class="w3-container kota w3-animate-bottom" style="display: none;">
+<h2>Mobil</h2>
+<hr>
+<img src="mobil.jfif">
+</div>
+<div id="Tasik" class="w3-container kota w3-animate-top" style="display: none;">
+<h2>Motor</h2>
+<hr>
+<img src="motor.jpg">
+</div>
+</center>
+<script>
+function openKota(namakota) {
+var i;
+var x = document.getElementsByClassName("kota");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+document.getElementById(namakota).style.display = "block";
+}
+</script>
+
+
+</body></html>
